@@ -38,6 +38,8 @@ npm start
 
 # 📦 Dependencies for project execution. To install, run the commands listed below. 
 
+* Without these dependencies, the project will not execute.
+
 ```bash
 npm install
 ```
