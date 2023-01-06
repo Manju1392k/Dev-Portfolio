@@ -1,6 +1,6 @@
 # ℹ️ Dev Portfolio Website
 
-DevPortfolio is a portfolio website for developers. This project is built with the React Framework.
+* DevPortfolio is a portfolio website for developers. This project is built with the React Framework.
 
 ---
 
