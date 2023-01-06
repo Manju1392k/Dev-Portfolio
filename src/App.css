@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(249, 249, 249);
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(0, 7, 251);
+  background: linear-gradient(180deg, rgba(0, 7, 251, 1) 0%, rgba(140, 74, 228, 1) 35%, rgba(24, 25, 80, 1) 100%);
+  position: absolute;
+  left: 0;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whitebox {
+  width: 60vw;
+  height: max-content;
+  background-color: #fff;
+  padding: 4rem;
+  box-shadow: 2px 2px 4px #0007fb;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.textdiv h4, h2, h3, h1 {
+  margin-bottom: 1rem;
+}
+
+.blue {
+  color: #0007fb;
+  font-weight: bold;
+}
+
+.ProfileImage {
+  margin-bottom: 2rem;
+}
+
+.boximage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+#home {
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#facebook {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#contact, #email {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#contact:hover, #email:hover {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+/* mobilenavbar display:none in Desktop version */
+.mobilenavbar {
+  display: none;
+}
+
+.menubar {
+  display: none;
+}
+
+/* media quries for responsive design */
+
+@media screen and (max-width: 1030px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .main {
+    width: 100vw;
+    margin-top: 8rem;
+    height: max-content;
+    margin-bottom: 5rem;
+  }
+
+  .whitebox {
+    width: 77vw;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    margin: auto;
+    padding: 1.5rem;
+    flex-direction: column-reverse;
+  }
+
+  .boximage {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* mobilenavbar display:flex in Mobile version */
+  .mobilenavbar {
+    display: flex;
+    width: 100vw;
+    height: 5rem;
+    background: rgb(0, 7, 251);
+    background: linear-gradient(90deg, rgba(0, 7, 251, 1) 0%, rgba(140, 74, 228, 1) 35%, rgba(24, 25, 80, 1) 100%);
+    position: fixed;
+    top: 0;
+    color: #fff;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #menuicon {
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #menuicon:active {
+    color: #000;
+  }
+
+  .mobilenavbar h2 {
+    margin: 0;
+  }
+
+  .menubar {
+    display: flex;
+    width: 0vw;
+    height: 20rem;
+    background: rgb(0, 7, 251);
+    background: linear-gradient(180deg, rgba(0, 7, 251, 1) 0%, rgba(140, 74, 228, 1) 35%, rgba(24, 25, 80, 1) 100%);
+    position: fixed;
+    top: 0;
+    color: #fff;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    transition: all 1000ms;
+    overflow: hidden;
+  }
+
+  #close {
+    font-size: 2rem;
+    margin-left: 70vw;
+  }
+
+  #close:active {
+    color: #000;
+  }
+
+}
